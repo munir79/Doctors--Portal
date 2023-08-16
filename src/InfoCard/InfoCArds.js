@@ -12,27 +12,30 @@ const InfoCArds = () => {
             id:1,
             name:'Opening Hours',
             description:'9.00 am to 6.00 pm everyday',
-          icons:clock
+          icons:clock,
+          bgClass:'bg-primary'
         },
         {
             id:2,
             name:'Our Location ',
             description:'9.00 am to 6.00 pm everyday',
-            icons:marker
+            icons:marker,
+            bgClass:'bg-accent'
          
         },
         {
             id:3,
             name:'contacts Us ',
             description:'9.00 am to 6.00 pm everyday',
-            icons:phone
+            icons:phone,
+            bgClass:'bg-primary'
           
         },
     ]
 
     
     return (
-        <div>
+        <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2  mt-4 gap-4 '>
         {
             cardItems.map(items=><Infocard  
             key={items.id}
