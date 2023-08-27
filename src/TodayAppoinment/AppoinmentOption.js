@@ -11,11 +11,11 @@ const AppoinmentOption = ({data,settreatment}) => {
           <div className="card-actions justify-end">
         
          
-          <label htmlFor="my-modal-3" className="btn"  
+          <label htmlFor="my-modal-3" className="btn  text-info  "  
           
           onClick={()=>settreatment(data)}
           
-          >open modal
+          >Book appoinment 
           
           
           </label>
