@@ -4,6 +4,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Main from './Layout/Main';
 import Home from './Pages/Home/Home/Home';
 import Login from './Auth/Login';
+import Todayappinment from './TodayAppoinment/Todayappinment';
 
 
 function App() {
@@ -18,6 +19,10 @@ function App() {
         },{
           path:'/login',
           element:<Login></Login>
+        },
+        {
+          path:'/appoinment',
+          element:<Todayappinment></Todayappinment>
         }
       
       ]                                                       

@@ -15,7 +15,7 @@ const Info = ({all}) => {
     <img src={image} alt=''/>
   </div>
 <div>
-<h3 className='text-2xl p-2 m-3'  > {Name}</h3>
+<h3 className='text-2xl p-2 m-3'  >{Name}</h3>
   <p> {LOcation} </p>
 </div>
 </div>
