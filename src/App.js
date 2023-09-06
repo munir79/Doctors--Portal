@@ -5,6 +5,9 @@ import Main from './Layout/Main';
 import Home from './Pages/Home/Home/Home';
 import Login from './Auth/Login';
 import Todayappinment from './TodayAppoinment/Todayappinment';
+import SignUp from './Auth/SignUp';
+import DashBoard from './DashBoard/DashBoard';
+import { Toaster } from 'react-hot-toast';
 
 
 function App() {
@@ -21,8 +24,16 @@ function App() {
           element:<Login></Login>
         },
         {
+        path:'/signup',
+        element:<SignUp></SignUp>
+        },
+        {
           path:'/appoinment',
           element:<Todayappinment></Todayappinment>
+        },
+        {
+          path:'/dashboard',
+          element:<DashBoard></DashBoard>
         }
       
       ]                                                       
@@ -31,6 +42,7 @@ function App() {
   return (
     <div className='max-w-[1440px] max-auto'>
       <RouterProvider router={router} ></RouterProvider>
+      <Toaster></Toaster>
  
     </div>
   );
