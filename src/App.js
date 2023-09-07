@@ -8,6 +8,7 @@ import Todayappinment from './TodayAppoinment/Todayappinment';
 import SignUp from './Auth/SignUp';
 import DashBoard from './DashBoard/DashBoard';
 import { Toaster } from 'react-hot-toast';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
         },
         {
           path:'/dashboard',
-          element:<DashBoard></DashBoard>
+          element:<PrivateRoute><DashBoard></DashBoard></PrivateRoute>
         }
       
       ]                                                       
