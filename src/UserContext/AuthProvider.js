@@ -27,7 +27,7 @@ const AuthProvider = ({children}) => {
       return  createUserWithEmailAndPassword(auth,email,password);
     }
     const UpdateUSer=(userInfo)=>{
-      return updateProfile(user);
+      return updateProfile(auth.currentUser,userInfo);
     }
     const signIn=(email,password)=>{
       setLoading(true);
