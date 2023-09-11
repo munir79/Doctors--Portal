@@ -9,6 +9,7 @@ import SignUp from './Auth/SignUp';
 import DashBoard from './DashBoard/DashBoard';
 import { Toaster } from 'react-hot-toast';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import DashBoardLayOut from './Layout/DashBoardLayOut';
 
 
 function App() {
@@ -34,7 +35,13 @@ function App() {
         },
         {
           path:'/dashboard',
-          element:<PrivateRoute><DashBoard></DashBoard></PrivateRoute>
+          element:<PrivateRoute> <DashBoardLayOut></DashBoardLayOut>  </PrivateRoute>,
+          children:[
+            {
+              path:'/dashboard',
+              element:<DashBoard></DashBoard>
+            }
+          ]
         }
       
       ]                                                       
